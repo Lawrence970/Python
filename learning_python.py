@@ -86,6 +86,14 @@ matrix_0 = [[1,17,5,14], #need to know more i think.
             [13,9,23,19]]
 
 # you can do stuff like this with matricies
+even_list = []
+
+for i in range(len(matrix_0)):
+    for j in range(len(matrix_0[i])):
+        if matrix_0[i][j] % 2 == 0:
+            even_list.append(matrix_0[i][j])
+            
+sum_even = sum(even_list)
 
 r3c4 = matrix_0[2][2:4] # the 3rd list item in matrix_0; the 3rd to 4th values in 3rd list.
 # with that i can grab whatever i want.
@@ -139,5 +147,21 @@ Dget = D.get('breakfast')
 ifD = D['x'] if 'x' in D else 0 # ifD = D['x'] ONLY IF 'x' is in D, otherwise ifD = 0
 
 #print(D['x']) >>> KeyError: 'x'
-print(ifD)
+#print(ifD) >>> 0
+
+#! trying to remember for loops
+
+x = 0 
+var_1 = 5
+var_2 = [1,14,var_1]
+
+for i in range(len(var_2)):
+    var_3 = (i, var_2[i]) #thanks robby
+
+
+x = 'string'
+
+x = x[0:2] + x[3:]
+
+# print(x) python has boxes.
 
