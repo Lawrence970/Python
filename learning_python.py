@@ -165,3 +165,29 @@ x = x[0:2] + x[3:]
 
 # print(x) python has boxes.
 
+
+
+aList = [0,0,1,0,0]
+#minus 1 because the first element is index 0
+G = int((len(aList) /2))
+# print(aList[G])
+
+
+
+dupe_list = ['burrito','taco','burrito','taco']
+locate_str = 'taco'
+count_0 = 0
+
+for x in dupe_list:
+    if x == locate_str:
+        count_0 += 1
+# print(count_0)
+
+
+
+Numbers = [90,78,34,50,100,99]
+highest_number = 0
+for i in Numbers:
+    if i > highest_number:
+        highest_number = i
+print(highest_number)
